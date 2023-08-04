@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Outfit', sans-serif;
+    height: 2000px;
+}
+
+.logo{
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.menu{
+    float: right;
+    display: none;
+}
+
+.half{
+    display: flex;
+    margin-left: 260px;
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px 60px;
+    background-color: rgb(31, 31, 204);
+    overflow: hidden;
+    font-weight: bold;
+    position: sticky;
+    top: 0px;
+    z-index: 50;
+}
+
+li{
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-weight: bolder;
+    padding: 14px 19px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.white li a:hover{
+    color: rgb(31, 31, 204);
+    background-color: white;
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        background-color: lavender;
+    }
+
+    ul{
+        padding: 10px; 
+    }
+    
+    .white{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        margin-top: 0px;
+    }
+
+    .new{
+        overflow: scroll;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .content{
+        padding: 0px;
+    }
+
+    .banner1{
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    
+}
+
+.content{
+    padding: 10px;
+}
+
+.new{
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    width: 1300px;
+    height: 450px;
+}
+
+.banner1{
+    width: 80%;
+    background-image: url(batman_ver26_xlg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-left: 40px;
+    font-family: 'Outfit', sans-serif;
+    margin: 20px auto;
+}
+
+.movie{
+    box-sizing: border-box;
+    width: 250px;
+    margin-top: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.movie, .jpeg, .text-space{
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.jpeg{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 0px;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+
+.text-space{
+    width: 100%;
+    background-color: white;
+    margin-top: 0px;
+    height: 150px;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: gainsboro;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    opacity: 0.7;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.text{
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+.movie:hover .overlay{
+    bottom: 0;
+    height: 100%;
+}
+
+
+.movie:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
